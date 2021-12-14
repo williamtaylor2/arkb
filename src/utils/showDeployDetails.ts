@@ -92,7 +92,7 @@ export async function showDeployDetails(
       .output();
   }
 
-  const fee = parseInt((deployFee * 0.1).toString(), 10);
+  const fee = parseInt((deployFee * 0.0).toString(), 10);
 
   const arFee = blockweave.ar.winstonToAr(deployFee.toString());
   const serviceFee = blockweave.ar.winstonToAr(fee.toString());
